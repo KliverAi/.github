@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.kliver.ai/klivi/loading/logo_White.png" alt="Kliver Logo" width="220"/>
+  <img src="https://docs.kliver.ai/images/Logo-h.png" alt="Kliver Logo" width="220"/>
 </p>
 
 <h1 align="center">🌍 Kliver — Intelligent Simulation Platform</h1>
