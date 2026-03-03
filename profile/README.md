@@ -2,100 +2,141 @@
   <img src="https://www.kliver.ai/images/kliver-diamond.png" alt="Kliver Logo" width="80"/>
 </p>
 
-<h1 align="center">Kliver — Intelligent Simulation Platform</h1>
+<h1 align="center">Kliver — AI-Powered Conversational Training Platform</h1>
 
 <p align="center">
-  <em>Empowering learning through AI-driven role-play, behavioral analytics, and adaptive feedback.</em>
+  <em>Transform conversational skills through immersive AI simulations, real conversation analysis, and adaptive feedback.</em>
 </p>
 
 ---
 
 <p align="center">
-  <a href="https://www.kliver.ai/klivi/home/Klivi.webm" target="_blank">Watch the demo video</a>
+  <a href="https://www.kliver.ai">Website</a> •
+  <a href="https://app.kliver.ai">Platform</a> •
+  <a href="https://docs.kliver.ai">Documentation</a>
 </p>
 
 ---
 
-Kliver is an **AI-powered simulation platform** that enables organizations to train and evaluate **soft skills, communication, and decision-making** through dynamic, realistic role-playing scenarios.  
-Built with a **modern microservices architecture**, Kliver integrates **AI agents, real-time analytics, and skill evaluation engines** to deliver measurable, scalable learning experiences.
+Kliver is an **AI-powered platform** that revolutionizes how organizations and individuals develop **communication skills, sales techniques, customer service, and soft skills** through two complementary approaches:
+
+1. **AI Simulations** — Practice with intelligent AI characters in realistic role-play scenarios
+2. **Real Conversation Analysis** — Import and analyze actual conversations from meetings, calls, and chats
 
 ---
 
-## Core Vision
+## Core Features
 
-Kliver transforms traditional training into **interactive simulations** where users engage with AI-driven characters that adapt emotionally, strategically, and linguistically.  
-Each interaction is analyzed in real time to assess competencies such as communication, empathy, adaptability, and critical thinking.
+### AI-Powered Simulations
+- **Dynamic AI Characters** with customizable personalities, behaviors, and emotional responses
+- **Multi-step Scenarios** with progressive difficulty and branching storylines
+- **Dynamics & Triggers** — Behavioral rules that activate based on time, context, or user actions
+- **Real-time Voice & Text** — Conversations powered by OpenAI Realtime, Azure Speech, and ElevenLabs
+- **Instant Feedback** — AI-driven session analysis with soft skill evaluation
+
+### Content Marketplace
+- **Member Content Creation** — Create and publish training frameworks
+- **Framework Library** — Browse and acquire frameworks from other creators
+- **Coin Economy** — Earn and spend coins for premium content
+- **Redemption Codes** — Promotional system for coin distribution
+
+### Conversation Capture & Analysis
+- **Chrome Extension** — Capture Google Meet captions in real-time
+- **Audio Import** — Upload recordings for automatic transcription
+- **Multi-speaker Recognition** — Identify and track different participants
+- **AI Analysis** — Evaluate real conversations using the same metrics as simulations
+
+### Enterprise Features
+- **Multi-tenant Architecture** — Clients, workspaces, and team management
+- **Role-based Access** — Admins, Creators, Players, Framework Managers
+- **Analytics Dashboards** — Track progress, performance, and engagement
+- **Invitation System** — Secure access control for simulations and workspaces
 
 ---
 
 ## Technology Stack
 
-| Layer | Technology | Description |
-|-------|-------------|-------------|
-| **Backend** | .NET 8 (C#), MediatR, CQRS | High-performance API with domain-driven microservices |
-| **AI Engine** | OpenAI Realtime, Gemini, LangChain, ElevenLabs | Multi-provider AI orchestration for dialogue and evaluation |
-| **Frontend** | React + TypeScript + Vite | Interactive dashboards and real-time simulation interface |
-| **Data Layer** | PostgreSQL, Redis, EF Core | Reliable storage, caching, and message bus |
-| **Observability** | OpenTelemetry, Application Insights, Grafana Alloy | Full-stack tracing, logs, and metrics |
-| **Infra & DevOps** | Docker, Kubernetes (Scaleway), GitHub Actions | CI/CD pipelines and scalable multi-environment deployment |
+| Layer | Technology |
+|-------|------------|
+| **Backend** | .NET 8, MediatR, CQRS, Vertical Slice Architecture |
+| **AI Providers** | OpenAI Realtime, Azure Speech, ElevenLabs, Gemini |
+| **Frontend** | React 18, TypeScript, Vite, Tailwind CSS |
+| **Mobile** | React Native / Cross-platform |
+| **Database** | PostgreSQL, Redis, Entity Framework Core |
+| **Real-time** | SignalR for live sessions and notifications |
+| **Observability** | OpenTelemetry, Application Insights, Grafana |
+| **Infrastructure** | Docker, Kubernetes (Scaleway), GitHub Actions |
 
 ---
 
 ## Platform Components
 
-| Project | Description |
-|----------|--------------|
-| **Kliver API** | Core backend that manages users, workspaces, simulations, and AI sessions |
-| **Kliver AI** | Graph-based workflow engine for contextual reasoning and adaptive conversations |
-| **Kliver Workers** | Microservices for email, analytics, and session processing |
-| **Kliver Front** | Web application for users and administrators |
-| **Kliver Docs** | Centralized documentation, guides, and API reference |
-| **Kliver Chrome Extension** | Browser extension to capture Google Meet captions |
+| Repository | Description |
+|------------|-------------|
+| **KliverApi** | Core backend API with microservices architecture |
+| **KliverFront** | Web application (React + Vite) and landing pages (Next.js) |
+| **KliverMobile** | Mobile application for iOS and Android |
+| **KliverChromeExtension** | Browser extension for Google Meet caption capture |
+| **KliverInfra** | Infrastructure as code and deployment configurations |
+| **KliverDocs** | Documentation and API reference |
 
 ---
 
-## Key Capabilities
+## How It Works
 
-- **AI-Driven Role-Play:** Simulated dialogues that adapt to tone, intent, and skill level  
-- **Soft-Skill Evaluation:** Automated scoring for communication, empathy, adaptability, etc.  
-- **Dynamic Storylines:** Multi-step scenarios with success/failure logic  
-- **Multi-Tenant System:** Workspaces, clients, and roles for enterprise scalability  
-- **Realtime Feedback:** Streaming responses via OpenAI Realtime & SignalR  
-- **Observability-Ready:** Complete tracing, structured logs, and business KPIs  
-
----
-
-## Architecture Snapshot
 ```
-Client ↔ Kliver Front ↔ Kliver API ↔ Redis ↔ Workers ↔ PostgreSQL
-                                 ↳ OpenAI / Gemini / Azure Speech / ElevenLabs
+┌─────────────────────────────────────────────────────────────────┐
+│                         KLIVER PLATFORM                          │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
+│  │   Practice   │    │   Capture    │    │   Analyze    │      │
+│  │              │    │              │    │              │      │
+│  │ AI Sims with │    │ Real convos  │    │ AI-powered   │      │
+│  │ characters & │    │ from Meet,   │    │ evaluation   │      │
+│  │ scenarios    │    │ calls, chat  │    │ & feedback   │      │
+│  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘      │
+│         │                   │                   │               │
+│         └───────────────────┼───────────────────┘               │
+│                             ▼                                    │
+│                   ┌──────────────────┐                          │
+│                   │  Skill Metrics   │                          │
+│                   │  & Progress      │                          │
+│                   └──────────────────┘                          │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Deployment Environments
+## Use Cases
 
-- **Development** — Local docker-compose stack  
-- **QA / Stage** — Isolated cluster with automated test runs  
-- **Production** — Scaleway Kapsule Kubernetes with Grafana Alloy monitoring  
-
-Continuous delivery via **GitHub Actions** with environment-specific secrets and versioned Docker images.
+- **Sales Training** — Practice pitches, objection handling, and closing techniques
+- **Customer Service** — Handle difficult customers and complex support scenarios
+- **Healthcare** — Patient communication and difficult conversations
+- **HR & Management** — Interview skills, feedback delivery, conflict resolution
+- **Education** — Language practice and communication skills development
 
 ---
 
-## Collaboration
+## Getting Started
 
-We welcome contributors, researchers, and organizations interested in:
-- Behavioral analytics  
-- Educational AI  
-- Soft-skill assessment  
-- AI simulation design  
+1. **Sign up** at [app.kliver.ai](https://app.kliver.ai)
+2. **Explore** the framework marketplace
+3. **Practice** with AI simulations
+4. **Install** the Chrome extension to capture real meetings
+5. **Analyze** your conversations and track improvement
 
-Check out our repositories below or contact us at **[www.kliver.ai](https://www.kliver.ai)**
+---
+
+## Contact
+
+- **Website**: [kliver.ai](https://www.kliver.ai)
+- **Email**: support@kliver.ai
 
 ---
 
 <p align="center">
   <strong>Built with love by the Kliver Team</strong><br/>
-  <em>AI that listens, reacts, and helps humans grow.</em>
+  <em>AI that listens, learns, and helps humans grow.</em>
 </p>
