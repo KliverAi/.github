@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://docs.kliver.ai/images/Logo-h.png" alt="Kliver Logo" width="220"/>
+  <img src="https://www.kliver.ai/images/kliver-diamond.png" alt="Kliver Logo" width="80"/>
 </p>
 
-<h1 align="center">🌍 Kliver — Intelligent Simulation Platform</h1>
+<h1 align="center">Kliver — Intelligent Simulation Platform</h1>
 
 <p align="center">
   <em>Empowering learning through AI-driven role-play, behavioral analytics, and adaptive feedback.</em>
@@ -11,7 +11,7 @@
 ---
 
 <p align="center">
-  🎬 <a href="https://www.kliver.ai/klivi/home/Klivi.webm" target="_blank">Watch the demo video</a>
+  <a href="https://www.kliver.ai/klivi/home/Klivi.webm" target="_blank">Watch the demo video</a>
 </p>
 
 ---
@@ -21,14 +21,14 @@ Built with a **modern microservices architecture**, Kliver integrates **AI agent
 
 ---
 
-## 🧠 Core Vision
+## Core Vision
 
 Kliver transforms traditional training into **interactive simulations** where users engage with AI-driven characters that adapt emotionally, strategically, and linguistically.  
 Each interaction is analyzed in real time to assess competencies such as communication, empathy, adaptability, and critical thinking.
 
 ---
 
-## ⚙️ Technology Stack
+## Technology Stack
 
 | Layer | Technology | Description |
 |-------|-------------|-------------|
@@ -41,7 +41,7 @@ Each interaction is analyzed in real time to assess competencies such as communi
 
 ---
 
-## 🧩 Platform Components
+## Platform Components
 
 | Project | Description |
 |----------|--------------|
@@ -50,10 +50,11 @@ Each interaction is analyzed in real time to assess competencies such as communi
 | **Kliver Workers** | Microservices for email, analytics, and session processing |
 | **Kliver Front** | Web application for users and administrators |
 | **Kliver Docs** | Centralized documentation, guides, and API reference |
+| **Kliver Chrome Extension** | Browser extension to capture Google Meet captions |
 
 ---
 
-## 🎮 Key Capabilities
+## Key Capabilities
 
 - **AI-Driven Role-Play:** Simulated dialogues that adapt to tone, intent, and skill level  
 - **Soft-Skill Evaluation:** Automated scoring for communication, empathy, adaptability, etc.  
@@ -64,7 +65,7 @@ Each interaction is analyzed in real time to assess competencies such as communi
 
 ---
 
-## 🧱 Architecture Snapshot
+## Architecture Snapshot
 ```
 Client ↔ Kliver Front ↔ Kliver API ↔ Redis ↔ Workers ↔ PostgreSQL
                                  ↳ OpenAI / Gemini / Azure Speech / ElevenLabs
@@ -72,7 +73,7 @@ Client ↔ Kliver Front ↔ Kliver API ↔ Redis ↔ Workers ↔ PostgreSQL
 
 ---
 
-## 🚀 Deployment Environments
+## Deployment Environments
 
 - **Development** — Local docker-compose stack  
 - **QA / Stage** — Isolated cluster with automated test runs  
@@ -82,7 +83,7 @@ Continuous delivery via **GitHub Actions** with environment-specific secrets and
 
 ---
 
-## 🤝 Collaboration
+## Collaboration
 
 We welcome contributors, researchers, and organizations interested in:
 - Behavioral analytics  
@@ -90,11 +91,11 @@ We welcome contributors, researchers, and organizations interested in:
 - Soft-skill assessment  
 - AI simulation design  
 
-👉 Check out our repositories below or contact us at **[www.kliver.ai](https://www.kliver.ai)**
+Check out our repositories below or contact us at **[www.kliver.ai](https://www.kliver.ai)**
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by the Kliver Team</strong><br/>
+  <strong>Built with love by the Kliver Team</strong><br/>
   <em>AI that listens, reacts, and helps humans grow.</em>
 </p>
